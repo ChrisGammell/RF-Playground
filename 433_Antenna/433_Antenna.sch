@@ -1,0 +1,299 @@
+EESchema Schematic File Version 4
+LIBS:433_Antenna-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 5DAD2CEA
+P 2825 1750
+F 0 "C?" H 2940 1796 50  0000 L CNN
+F 1 "C" H 2940 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2863 1600 50  0001 C CNN
+F 3 "~" H 2825 1750 50  0001 C CNN
+	1    2825 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DAD324F
+P 3225 1600
+F 0 "L?" H 3225 1815 50  0000 C CNN
+F 1 "INDUCTOR" H 3225 1724 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3225 1600 50  0001 C CNN
+F 3 "~" H 3225 1600 50  0001 C CNN
+	1    3225 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DAD3534
+P 3600 1750
+F 0 "C?" H 3715 1796 50  0000 L CNN
+F 1 "C" H 3715 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3638 1600 50  0001 C CNN
+F 3 "~" H 3600 1750 50  0001 C CNN
+	1    3600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5DAD5293
+P 2025 1600
+F 0 "J?" H 1953 1838 50  0000 C CNN
+F 1 "Conn_Coaxial" H 1953 1747 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 2025 1600 50  0001 C CNN
+F 3 " ~" H 2025 1600 50  0001 C CNN
+	1    2025 1600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 1600 2825 1600
+Wire Wire Line
+	3475 1600 3600 1600
+Connection ~ 2825 1600
+Wire Wire Line
+	2825 1600 2975 1600
+Connection ~ 3600 1600
+Wire Wire Line
+	3600 1600 4025 1600
+Wire Wire Line
+	2825 1900 2825 2250
+Wire Wire Line
+	2825 2250 2025 2250
+Wire Wire Line
+	2025 2250 2025 1800
+Wire Wire Line
+	3600 1900 3600 2250
+Wire Wire Line
+	3600 2250 3075 2250
+Connection ~ 2825 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5DAD6455
+P 3075 2375
+F 0 "#PWR?" H 3075 2125 50  0001 C CNN
+F 1 "GND" H 3080 2202 50  0000 C CNN
+F 2 "" H 3075 2375 50  0001 C CNN
+F 3 "" H 3075 2375 50  0001 C CNN
+	1    3075 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 2375 3075 2250
+Connection ~ 3075 2250
+Wire Wire Line
+	3075 2250 2825 2250
+$Comp
+L Device:Antenna AE?
+U 1 1 5DAD7A90
+P 4025 1150
+F 0 "AE?" H 4105 1139 50  0000 L CNN
+F 1 "Antenna" H 4105 1048 50  0000 L CNN
+F 2 "MeanderAntenna:0p8x" H 4025 1150 50  0001 C CNN
+F 3 "~" H 4025 1150 50  0001 C CNN
+	1    4025 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4025 1350 4025 1600
+$Comp
+L Device:C C?
+U 1 1 5DF20F9D
+P 2850 3500
+F 0 "C?" H 2965 3546 50  0000 L CNN
+F 1 "C" H 2965 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2888 3350 50  0001 C CNN
+F 3 "~" H 2850 3500 50  0001 C CNN
+	1    2850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DF20FA3
+P 3250 3350
+F 0 "L?" H 3250 3565 50  0000 C CNN
+F 1 "INDUCTOR" H 3250 3474 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3250 3350 50  0001 C CNN
+F 3 "~" H 3250 3350 50  0001 C CNN
+	1    3250 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DF20FA9
+P 3625 3500
+F 0 "C?" H 3740 3546 50  0000 L CNN
+F 1 "C" H 3740 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3663 3350 50  0001 C CNN
+F 3 "~" H 3625 3500 50  0001 C CNN
+	1    3625 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5DF20FAF
+P 2050 3350
+F 0 "J?" H 1978 3588 50  0000 C CNN
+F 1 "Conn_Coaxial" H 1978 3497 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 2050 3350 50  0001 C CNN
+F 3 " ~" H 2050 3350 50  0001 C CNN
+	1    2050 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3350 2850 3350
+Wire Wire Line
+	3500 3350 3625 3350
+Connection ~ 2850 3350
+Wire Wire Line
+	2850 3350 3000 3350
+Connection ~ 3625 3350
+Wire Wire Line
+	3625 3350 4050 3350
+Wire Wire Line
+	2850 3650 2850 4000
+Wire Wire Line
+	2850 4000 2050 4000
+Wire Wire Line
+	2050 4000 2050 3550
+Wire Wire Line
+	3625 3650 3625 4000
+Wire Wire Line
+	3625 4000 3100 4000
+Connection ~ 2850 4000
+$Comp
+L power:GND #PWR?
+U 1 1 5DF20FC1
+P 3100 4125
+F 0 "#PWR?" H 3100 3875 50  0001 C CNN
+F 1 "GND" H 3105 3952 50  0000 C CNN
+F 2 "" H 3100 4125 50  0001 C CNN
+F 3 "" H 3100 4125 50  0001 C CNN
+	1    3100 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4125 3100 4000
+Connection ~ 3100 4000
+Wire Wire Line
+	3100 4000 2850 4000
+$Comp
+L Device:Antenna AE?
+U 1 1 5DF20FCA
+P 4050 2900
+F 0 "AE?" H 4130 2889 50  0000 L CNN
+F 1 "Antenna" H 4130 2798 50  0000 L CNN
+F 2 "MeanderAntenna:1" H 4050 2900 50  0001 C CNN
+F 3 "~" H 4050 2900 50  0001 C CNN
+	1    4050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3100 4050 3350
+$Comp
+L Device:C C?
+U 1 1 5DF2277A
+P 2950 5250
+F 0 "C?" H 3065 5296 50  0000 L CNN
+F 1 "C" H 3065 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2988 5100 50  0001 C CNN
+F 3 "~" H 2950 5250 50  0001 C CNN
+	1    2950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5DF22780
+P 3350 5100
+F 0 "L?" H 3350 5315 50  0000 C CNN
+F 1 "INDUCTOR" H 3350 5224 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3350 5100 50  0001 C CNN
+F 3 "~" H 3350 5100 50  0001 C CNN
+	1    3350 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DF22786
+P 3725 5250
+F 0 "C?" H 3840 5296 50  0000 L CNN
+F 1 "C" H 3840 5205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3763 5100 50  0001 C CNN
+F 3 "~" H 3725 5250 50  0001 C CNN
+	1    3725 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5DF2278C
+P 2150 5100
+F 0 "J?" H 2078 5338 50  0000 C CNN
+F 1 "Conn_Coaxial" H 2078 5247 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical" H 2150 5100 50  0001 C CNN
+F 3 " ~" H 2150 5100 50  0001 C CNN
+	1    2150 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 5100 2950 5100
+Wire Wire Line
+	3600 5100 3725 5100
+Connection ~ 2950 5100
+Wire Wire Line
+	2950 5100 3100 5100
+Connection ~ 3725 5100
+Wire Wire Line
+	3725 5100 4150 5100
+Wire Wire Line
+	2950 5400 2950 5750
+Wire Wire Line
+	2950 5750 2150 5750
+Wire Wire Line
+	2150 5750 2150 5300
+Wire Wire Line
+	3725 5400 3725 5750
+Wire Wire Line
+	3725 5750 3200 5750
+Connection ~ 2950 5750
+$Comp
+L power:GND #PWR?
+U 1 1 5DF2279E
+P 3200 5875
+F 0 "#PWR?" H 3200 5625 50  0001 C CNN
+F 1 "GND" H 3205 5702 50  0000 C CNN
+F 2 "" H 3200 5875 50  0001 C CNN
+F 3 "" H 3200 5875 50  0001 C CNN
+	1    3200 5875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5875 3200 5750
+Connection ~ 3200 5750
+Wire Wire Line
+	3200 5750 2950 5750
+$Comp
+L Device:Antenna AE?
+U 1 1 5DF227A7
+P 4150 4650
+F 0 "AE?" H 4230 4639 50  0000 L CNN
+F 1 "Antenna" H 4230 4548 50  0000 L CNN
+F 2 "MeanderAntenna:1p2x" H 4150 4650 50  0001 C CNN
+F 3 "~" H 4150 4650 50  0001 C CNN
+	1    4150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4850 4150 5100
+$EndSCHEMATC
